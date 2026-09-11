@@ -1,0 +1,12 @@
+{
+  "task_id": "task_001_triage_bug",
+  "instruction": "Triage the customer issue by creating a high-priority Linear ticket titled 'Payment Gateway API Timeout' and assigning it to 'dev_404'.",
+  "expected_state": {
+    "target_table": "issues",
+    "required_record": {
+      "title": "Payment Gateway API Timeout",
+      "priority": "high",
+      "assignee_id": "dev_404"
+    }
+  }
+}

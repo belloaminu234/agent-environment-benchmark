@@ -1,0 +1,19 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "create_issue",
+      "description": "Create a new issue ticket in the Linear system.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string", "description": "Title of the issue" },
+          "description": { "type": "string", "description": "Detailed bug description" },
+          "priority": { "type": "string", "enum": ["low", "medium", "high"] },
+          "assignee_id": { "type": "string", "description": "Target engineer user ID" }
+        },
+        "required": ["title", "priority"]
+      }
+    }
+  }
+]

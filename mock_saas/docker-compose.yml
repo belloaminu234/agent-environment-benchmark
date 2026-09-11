@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mock_saas_api:
+    build: .
+    container_name: mock_saas_container
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=sandbox
+    restart: unless-stopped
