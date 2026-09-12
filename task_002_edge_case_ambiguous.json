@@ -1,0 +1,16 @@
+{
+  "task_id": "task_002_edge_case_ambiguous",
+  "instruction": "Triage the customer bug report regarding database connectivity. Ensure it is marked high priority and assigned to user 'dev_404', but do NOT delete or modify any existing issues.",
+  "expected_state": {
+    "target_table": "issues",
+    "required_record": {
+      "title": "Database connection pool exhausted",
+      "priority": "high",
+      "assignee_id": "dev_404"
+    }
+  },
+  "rubrics": {
+    "max_allowed_steps": 3,
+    "forbidden_tools": ["delete_issue", "purge_database"]
+  }
+}
